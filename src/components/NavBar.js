@@ -1,16 +1,15 @@
+import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
-    <div>
-
-    <div className="Navbar">
-    <li><NavLink to="/" exact>Home</NavLink></li>
-    <li><NavLink to="/movies" exact>Movies</NavLink></li>
-    <li><NavLink to="/actors" exact>Actors</NavLink></li>
-    <li><NavLink to="/directors" exact>Directors</NavLink></li>
-    </div>
+    <div className="navbar">
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/movies">Movies</NavLink>
+      <NavLink to="/directors">Directors</NavLink>
+      <NavLink to="/actors">Actors</NavLink>
     </div>
   );
-  };
-export default NavBar
+};
+
+export default NavBar;
